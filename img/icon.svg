@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="@.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="2.4989967"
+     inkscape:cx="78.031314"
+     inkscape:cy="88.83565"
+     inkscape:window-width="1366"
+     inkscape:window-height="708"
+     inkscape:window-x="0"
+     inkscape:window-y="91"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="43.427263"
+       y="46.806823"
+       width="131.03547"
+       height="43.376843"
+       id="rect2927" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:204.479px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;fill:#9acd32;stroke-width:5.11197"
+       x="5.243453"
+       y="145.925"
+       id="text363"><tspan
+         sodipodi:role="line"
+         id="tspan361"
+         x="5.243453"
+         y="145.925"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Rubik;-inkscape-font-specification:Rubik;stroke-width:5.11197">@</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text2925"
+       style="line-height:1.25;font-family:rubik;font-size:40px;letter-spacing:0px;white-space:pre;shape-inside:url(#rect2927);-inkscape-font-specification:rubik;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal" />
+  </g>
+</svg>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Febriyan Naufal Ahza">
+    <link rel="icon" href="img/icon.svg" type="image/x-icon">
     <title>Naufal Personal Blog</title>
     <!-- Link To CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -19,127 +20,155 @@
     <header>
         <!-- Nav-bar -->
         <div class="nav container">
-            <!-- Logo -->
-            <a href="#" class="logo">Naufal<span>.</span></a>
-            <!-- About Me -->
-            <a href="#" class="about-me">About Me</a>
+            <div class="banner">
+                <!-- Logo -->
+                <span href="index.html" class="banner-home">naufal@ahza</span>
+                <span id="directory" class="banner-dir">$</span>
+                <span class="banner-cursor">&#x25AE;</span>
+            </div>
+            <ul>
+                <!-- Article -->
+                <li><a href="#post" onclick="changeDir()">Article</a></li>
+                <!-- Daily -->
+                <li><a href="#">Daily</a></li>
+                <!-- About Me -->
+                <li><a href="#">About Me</a></li>
+                <i id="icon" class='bx bxs-palette' ></i>
+            </ul>
         </div>
     </header>
     
     <!-- Home -->
-    <section class="home" id="home">
-        <div class="home-text container">
+    <section id="particles-js"class="home">
+        <div class="home-text">
             <h2 class="home-title">Naufal's Notes</h2>
             <span class="home-subtitle">My notes on computer science and cybersecurity related.</span>
         </div>
     </section>
-    
-    <!-- Post Filters -->
-    <div class="post-filter container">
-        <span class="filter-item active" data-filter='all'>All</span>
-        <span class="filter-item" data-filter='binex'>Binary Exploit</span>
-        <span class="filter-item" data-filter='web'>Web Exploit</span>
-        <span class="filter-item" data-filter='crypto'>Cryptography</span>
-        <span class="filter-item" data-filter='forensic'>Forensic</span>
-        <span class="filter-item" data-filter='reverse'>Reverse Engineering</span>
-        
-    </div>
 
     <!--Posts-->
-    <section class="post container">
-        <!-- Post Box 1-->
-        <div class="post-box crypto">
-            <img src="img/post-1.jpg" alt="" class="post-img">
-            <span class="category">Cryptography</span>
-            <a href="post-page.html" class="post-title">
-                What is Caesar Cipher?
-            </a>
-            <span class="post-date">11 Sep 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+    <section id="post" class="post">
+        <!-- Post Filters -->
+        <div class="post-filter container">
+            <span class="filter-item active-filter" data-filter='all'>All</span>
+            <span class="filter-item" data-filter='binex'>Binary</span>
+            <span class="filter-item" data-filter='web'>Web </span>
+            <span class="filter-item" data-filter='crypto'>Cryptography</span>
+            <span class="filter-item" data-filter='forensic'>Forensic</span>
+            <span class="filter-item" data-filter='reverse'>Reverse</span>
         </div>
-        <!-- Post Box 2-->
-        <div class="post-box web">
-            <img src="img/post-2.jpg" alt="" class="post-img">
-            <span class="category">Web Exploit</span>
-            <a href="post-page.html" class="post-title">
-                What is SQL Injection?
-            </a>
-            <span class="post-date">11 Sep 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
-        </div>
-            <!-- Post Box 3-->
-        <div class="post-box forensic">
-            <img src="img/post-3.jpg" alt="" class="post-img">
-            <span class="category">Forensic</span>
-            <a href="post-page.html" class="post-title">
-                Steganography: Hiding a Message in Audio
-            </a>
-            <span class="post-date">11 Sep 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
-        </div>
-        <!-- Post Box 4-->
-        <div class="post-box binex">
-            <img src="img/post-1.jpg" alt="" class="post-img">
-            <span class="category">Cryptography</span>
-            <a href="post-page.html" class="post-title">
-                What is Caesar Cipher?
-            </a>
-            <span class="post-date">11 Sep 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
-        </div>
-        <!-- Post Box 5-->
-        <div class="post-box reverse">
-            <img src="img/post-2.jpg" alt="" class="post-img">
-            <span class="category">Web Exploit</span>
-            <a href="post-page.html" class="post-title">
-                What is SQL Injection?
-            </a>
-            <span class="post-date">11 Sep 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
-        </div>
-            <!-- Post Box 6-->
-        <div class="post-box binex">
-            <img src="img/post-3.jpg" alt="" class="post-img">
-            <span class="category">Forensic</span>
-            <a href="post-page.html" class="post-title">
-                Steganography: Hiding a Message in Audio
-            </a>
-            <span class="post-date">11 Sep 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
-        </div>
-        <!-- Post Box 7-->
-        <div class="post-box web">
-            <img src="img/post-1.jpg" alt="" class="post-img">
-            <span class="category">Cryptography</span>
-            <a href="post-page.html" class="post-title">
-                What is Caesar Cipher?
-            </a>
-            <span class="post-date">11 Sep 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
-        </div>
-        <!-- Post Box 8-->
-        <div class="post-box crypto">
-            <img src="img/post-2.jpg" alt="" class="post-img">
-            <span class="category">Web Exploit</span>
-            <a href="post-page.html" class="post-title">
-                What is SQL Injection?
-            </a>
-            <span class="post-date">11 Sep 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
-        </div>
-            <!-- Post Box 9-->
-        <div class="post-box reverse">
-            <img src="img/post-3.jpg" alt="" class="post-img">
-            <span class="category">Forensic</span>
-            <a href="post-page.html" class="post-title">
-                Steganography: Hiding a Message in Audio
-            </a>
-            <span class="post-date">11 Sep 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+        <section class="post container">
+            <!-- Post Box 1-->
+            <div class="post-box crypto">
+                <img src="img/post-1.jpg" alt="" class="post-img">
+                <span class="category">Cryptography</span>
+                <a href="html/post-page.html" class="post-title">
+                    What is Caesar Cipher?
+                </a>
+                <span class="post-date">11 Sep 2022</span>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+            </div>
+            <!-- Post Box 2-->
+            <div class="post-box web">
+                <img src="img/post-2.jpg" alt="" class="post-img">
+                <span class="category">Web Exploit</span>
+                <a href="html/post-page.html" class="post-title">
+                    What is SQL Injection?
+                </a>
+                <span class="post-date">11 Sep 2022</span>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+            </div>
+                <!-- Post Box 3-->
+            <div class="post-box forensic">
+                <img src="img/post-3.jpg" alt="" class="post-img">
+                <span class="category">Forensic</span>
+                <a href="html/post-page.html" class="post-title">
+                    Steganography: Hiding a Message in Audio
+                </a>
+                <span class="post-date">11 Sep 2022</span>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+            </div>
+            <!-- Post Box 4-->
+            <div class="post-box binex">
+                <img src="img/post-1.jpg" alt="" class="post-img">
+                <span class="category">Cryptography</span>
+                <a href="html/post-page.html" class="post-title">
+                    What is Caesar Cipher?
+                </a>
+                <span class="post-date">11 Sep 2022</span>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+            </div>
+            <!-- Post Box 5-->
+            <div class="post-box reverse">
+                <img src="img/post-2.jpg" alt="" class="post-img">
+                <span class="category">Web Exploit</span>
+                <a href="post-page.html" class="post-title">
+                    What is SQL Injection?
+                </a>
+                <span class="post-date">11 Sep 2022</span>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+            </div>
+                <!-- Post Box 6-->
+            <div class="post-box binex">
+                <img src="img/post-3.jpg" alt="" class="post-img">
+                <span class="category">Forensic</span>
+                <a href="html/post-page.html" class="post-title">
+                    Steganography: Hiding a Message in Audio
+                </a>
+                <span class="post-date">11 Sep 2022</span>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+            </div>
+            <!-- Post Box 7-->
+            <div class="post-box web">
+                <img src="img/post-1.jpg" alt="" class="post-img">
+                <span class="category">Cryptography</span>
+                <a href="html/post-page.html" class="post-title">
+                    What is Caesar Cipher?
+                </a>
+                <span class="post-date">11 Sep 2022</span>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+            </div>
+            <!-- Post Box 8-->
+            <div class="post-box crypto">
+                <img src="img/post-2.jpg" alt="" class="post-img">
+                <span class="category">Web Exploit</span>
+                <a href="html/post-page.html" class="post-title">
+                    What is SQL Injection?
+                </a>
+                <span class="post-date">11 Sep 2022</span>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+            </div>
+                <!-- Post Box 9-->
+            <div class="post-box reverse">
+                <img src="img/post-3.jpg" alt="" class="post-img">
+                <span class="category">Forensic</span>
+                <a href="html/post-page.html" class="post-title">
+                    Steganography: Hiding a Message in Audio
+                </a>
+                <span class="post-date">11 Sep 2022</span>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita cupiditate iusto, optio odit minima voluptatum dolor doloremque eveniet reiciendis labore deleniti perspiciatis maiores provident iure culpa hic obcaecati. Repudiandae!</p>
+            </div>
+        </section>
+        
+    </section>
+
+    <section class="footer">
+        <!-- Footer -->
+        <div class="footer-content">
+            <p>&#169; Febriyan Naufal Ahza All Right Reserved</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+            </div>
         </div>
     </section>
 
     <!-- Link To JS -->
     <script defer src="js/main.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script  src="js/home-animation.js"></script>
 </body>
 </html>
