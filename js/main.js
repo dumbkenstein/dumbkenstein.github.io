@@ -21,9 +21,12 @@ $(document).ready(function(){
 window.addEventListener('scroll', () => {
   header.classList.toggle("show-dir", window.scrollY > 50);
 })*/
-function changeDir() {
-  document.getElementById("banner-dir").innerHTML=("$ cd article/");
-}
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
 
 var icon = document.getElementById("icon");
 icon.onclick = function(){
