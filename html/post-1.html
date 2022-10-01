@@ -20,9 +20,9 @@
         <div class="nav container">
             <div class="banner">
                 <!-- Logo -->
-                <a href="/index.html"><span class="banner-home">naufal@ahza</span></a>
-                <span class="banner-dir">$ cat post.txt</span>
-                <span class="banner-cursor">&#x25AE;</span>
+                <span href="/index.html" class="banner-home">naufal@ahza</span>
+                <span id="directory" class="banner-dir">$ cat post.txt</span>
+                <span class="banner-cursor"></span>
             </div>
             <div class="navbar-links">
                 <ul>
@@ -39,7 +39,7 @@
     </header>
     
     <!-- Post Content -->
-    <section class="post-content post-container">
+    <section class="post-content">
         <div class="content-box">
             <div class="header-content post-container">
                 <!--Back To Home-->
@@ -65,29 +65,29 @@
                     <br>Di bawah ini adalah tahapan instalasinya.</p>
                 <h2 class="sub-heading">Cara Instalasi Bahasa R di Ubuntu</h2>
                 <!--Langkah 1-->
-                <p><b>Langkah 1 : </b>Pertama, kamu harus melakukan update terhadap package list menggunakan command berikut:</p>
+                <p  class="post-text"><b>Langkah 1 : </b>Pertama, kamu harus melakukan update terhadap package list menggunakan command berikut:</p>
                 <pre><span>$</span>sudo apt update && sudo apt upgrade</pre>
                 <img title="update-upgrade" src="/img/post-1/update-upgrade.png">
                 <!--Langkah 2-->
-                <p><b>Langkah 2 : </b>Selanjutnya, mengunduh package yang dibutuhkan untuk menjalankan R di Ubuntu dengan menggunakan command:</p>
+                <p class="post-text"><b>Langkah 2 : </b>Selanjutnya, mengunduh package yang dibutuhkan untuk menjalankan R di Ubuntu dengan menggunakan command:</p>
                 <pre><span>$</span>sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common</pre>
                 <img title="essential dependencies" src="/img/post-1/dependensi-esensial.png">
                 <p class="img-desc">Kebetulan pada device saya sudah terinstal semua package-nya.</p>
                 <!--Langkah 3-->
-                <p><b>Langkah 3 : </b>Setelah memasang dependensi yang dibutuhkan, sekarang autentikasi package dengan:</p>
+                <p class="post-text"><b>Langkah 3 : </b>Setelah memasang dependensi yang dibutuhkan, sekarang autentikasi package dengan:</p>
                 <pre><span>$</span>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9</pre>
                 <img title="autentikasi-package" src="/img/post-1/autentikasi-package.png">
                 <!--Langkah 4-->
-                <p><b>Langkah 4 : </b>Tambahkan repositori CRN dengan command berikut:</p>
-                <pre><span>$</span>sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/<br>ubuntu focal-cran40/'</pre>
+                <p class="post-text"><b>Langkah 4 : </b>Tambahkan repositori CRN dengan command berikut:</p>
+                <pre><span>$</span>sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'</pre>
                 <img title="repositori" src="/img/post-1/repositori.png">
                 <p class="img-desc">Penambahan CRN repository sudah berhasil.</p>
                 <!--Langkah 5-->
-                <p><b>Langkah 5 : </b>Setelah pemasangan di atas sudah selesai, sekarang install bahasa R dengan command:</p>
+                <p class="post-text"><b>Langkah 5 : </b>Setelah pemasangan di atas sudah selesai, sekarang install bahasa R dengan command:</p>
                 <pre><span>$</span>sudo apt install r-base</pre>
                 <img title="install-r-base" src="/img/post-1/install-r-base.png">
                 <!--Langkah 6-->
-                <p><b>Langkah 6 : </b>Setelah bahasa R terpasang, kamu bisa menjalankan R di terminal:</p>
+                <p class="post-text"><b>Langkah 6 : </b>Setelah bahasa R terpasang, kamu bisa menjalankan R di terminal:</p>
                 <pre><span>$</span>sudo -i R</pre>
                 <img title="run-r-console" src="/img/post-1/run-r-console.png">
                 <p class="img-desc">Menjalankan R di terminal (console) sudah berhasil.</p>
@@ -97,21 +97,21 @@
                 <div class="latihan">
                     <!--Latihan 1-->
                     <h2 class="sub-heading">Soal Latihan 1</h2>
-                    <p><span>1)</span> Buatlah program untuk menampilkan bilangan ganjil atau genap.</p>
-                    <p>Code :</p>
-                    <pre><span>></span>bilangan <- function(num){<br>  if(num %% 2 == 0){<br>    sprintf("%d termasuk bilangan genap.", nilai)<br>  } else{<br>    sprintf("%d termasuk bilangan ganjil.", nilai)<br>  }<br>}</pre>
-                    <p>Output :</p>
-                    <pre>[1] Hello, Friend! 1337</pre>
-                    <p><span>2)</span> Buatlah tampilan program sebagai berikut:<br>Untuk menghitung nilai A >= 86, B >= 70, C >= 50 :</p>
-                    <p>Output :</p>
-                    <pre>[1] 1<br>[1] 2<br>[1] 3<br>[1] 4<br>[1] 5<br>[1] 6<br>[1] 7<br>[1] 8<br>[1] 9<br>[1] 10</pre>
-                    <p>Code :</p>
-                    <pre><span>></span>for (x in 1:10){<br>       print(x)<br>   }</pre>
+                    <p class="post-text"><span>1)</span> Buatlah program untuk menampilkan bilangan ganjil atau genap.</p>
+                    <p class="post-text">Code :</p>
+                    <img src="/img/post-1/ganjil-genap.png" alt="" class="img-code">
+                    <p class="post-text">Output :</p>
+                    <img src="/img/post-1/ganjil-genap-output.png" alt="" class="img-code">
+                    <p class="post-text"><span>2)</span> Buatlah tampilan program sebagai berikut:<br>Untuk menghitung nilai A >= 86, B >= 70, C >= 50 :</p>
+                    <p class="post-text">Code :</p>
+                    <img src="/img/post-1/range-nilai.png" alt="" class="img-code">
+                    <p class="post-text">Output :</p>
+                    <img src="/img/post-1/range-nilai-output.png" alt="" class="img-code">
 
                     <!--Latihan 2--> 
                     <h2 class="sub-heading">Soal Latihan 2</h2>
                     <p><span>1)</span> Buatlah program untuk menyimpan 3 buah data pada 3 buah variabel x, y, z.</p>
-                    <p>Code :</p>
+                    <p class="post-text">Code :</p>
                     <pre><span>></span>x <- "Hello,"<br><span>></span>y <- "Friend!"<br><span>></span>z <- 1337<br><span>></span>paste(x, y, z)</pre>
                     <p>Output :</p>
                     <pre>[1] Hello, Friend! 1337</pre>
@@ -119,7 +119,7 @@
                     <p>Output :</p>
                     <pre>[1] 1<br>[1] 2<br>[1] 3<br>[1] 4<br>[1] 5<br>[1] 6<br>[1] 7<br>[1] 8<br>[1] 9<br>[1] 10</pre>
                     <p>Code :</p>
-                    <pre><span>></span>for (x in 1:10){<br>       print(x)<br>   }</pre>
+                    <pre><span>></span>for (x in 1:10){<br>    print(x)<br>  }</pre>
                 </div>
             </div>
                 <!-- Share -->

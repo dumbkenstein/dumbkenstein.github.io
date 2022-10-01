@@ -22,8 +22,8 @@
     background: var(--second-color);
 }
 ::-webkit-scrollbar{
-    width: 8px;
-    height: 2vw;
+    width: 1vw;
+    height: 1.1vw;
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--second-color);
@@ -51,11 +51,11 @@ pre{
     overflow: auto;
 }
 pre::-webkit-scrollbar{
-    height: 1vw;
+    height: 0.8vw;
 }
 pre::-webkit-scrollbar-thumb{
     background-color: var(--second-color);
-    border-radius: 1vw;
+    border-radius: 0.8vw;
 }
 pre span{
     color: var(--second-color);
@@ -140,24 +140,6 @@ li a:hover{
     cursor: pointer;
     position: absolute;
 }
-.bxs-palette{
-    font-size: 1.15rem;
-    color: var(--text-color);
-    padding: 8px 14px; 
-}
-.bxs-palette:hover{
-    color: var(--second-color);
-    animation: spin 2s infinite;
-    transition: 0.2s all linear;
-}
-@keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 .banner{
     position: relative;
     font-size: 1.3rem;
@@ -176,11 +158,10 @@ li a:hover{
 }
 .banner-cursor{
     position: absolute;
-    width: 8.5px;
-    height: 1.1rem;
-    margin-left: 5px;
-    margin-bottom: 0;
-    color: var(--second-color);
+    width: 10px;
+    height: 1.2rem;
+    margin: 2px 5px;
+    background: var(--second-color);
     display: inline-block;
     animation: cursor-blink 1s ease infinite;
 }
@@ -366,7 +347,7 @@ p span{
     max-width: 1000px;
     width: 100%;
     object-position: center;
-    margin: auto;
+    
     margin-bottom: 2rem;
     display: flex;
 }
@@ -387,8 +368,8 @@ p span{
 .img-desc{
     font-size: 15px;
     color: var(--code-color);
+    margin: 10px;
     margin-left: 5rem;
-    margin-bottom: 15px;
 }
 .header-content{
     display: flex;
@@ -400,6 +381,7 @@ p span{
     background: var(--third-color);
     box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
     align-items: center;
+    max-width: 940px;
     padding: 35px;
     border-radius: 27px;
     margin: auto;
@@ -414,27 +396,30 @@ p span{
     font-size: 2rem;
     color: var(--text-color);
     text-align: center;
-    margin-bottom: 0rem;
 }
 .header-img{
     width: 100%;
-    height: 420px;
+    height: 100%;
     border-radius: 17px;
     object-fit: cover;
     object-position: center;
 }
 .post-content{
-    margin-top: 7rem !important;
+    margin: 7rem 7rem 2rem!important;
 }
 .sub-heading{
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 .post-text{
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.7rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     text-align: justify;
+}
+.img-code{
+    max-width: 575px;
+    height: auto;
 }
 .latihan{
     font-size: 14px;
@@ -458,10 +443,13 @@ p span{
     font-size: 1.1rem;
 }
 /*Responsive*/
-@media (max-width: 1060px) {
+@media (max-width: 1080px) {
     .container{
         margin: 0 auto;
         width: 95%;
+    }
+    .post-content{
+        margin: 6rem 4rem  2rem!important;
     }
     .home-text{
         width: 100%;
@@ -475,10 +463,6 @@ p span{
         font-size: 95%;
         line-height: 1.2rem;
    }
-   .post-paragraph{
-        font-size: 90%;
-        line-height: 1.2rem;
-    }
 }
 @media (max-width: 800px) {
     section{
@@ -516,8 +500,12 @@ p span{
     .post-header{
         height: 435px;
     }
+    .post-paragraph{
+        font-size: 90%;
+        line-height: 1.2rem;
+    }
     .post-content{
-        margin-top: 9rem !important;
+        margin: 4rem 2rem 2rem !important;
     }
 }
 @media (max-width: 725px) {
