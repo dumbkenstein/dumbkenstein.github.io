@@ -361,13 +361,16 @@ p span{
     margin-bottom: 0;
 }
 .windows{
+    position: relative;
     margin-bottom: 3rem;
 }
 img.windows{
-    width:auto; 
-    height:auto;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
 }
 .post-paragraph span{
     color: var(--second-color);
