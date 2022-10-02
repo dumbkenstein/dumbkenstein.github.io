@@ -57,10 +57,6 @@ pre::-webkit-scrollbar-thumb{
     background-color: var(--second-color);
     border-radius: 0.8vw;
 }
-pre span{
-    color: var(--second-color);
-    margin-right: 15px;
-}
 li{
     list-style: none;
 }
@@ -364,11 +360,25 @@ p span{
     margin-right: auto;
     margin-bottom: 0;
 }
+.windows{
+    margin-bottom: 3rem;
+}
+img.windows{
+    width:auto; 
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.post-paragraph span{
+    color: var(--second-color);
+    margin-right: 10px;
+}
 .img-desc{
     font-size: 15px;
     color: var(--code-color);
-    margin: 10px;
-    margin-left: 5rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 .header-content{
     display: flex;
@@ -416,6 +426,10 @@ p span{
     margin: 0.5rem 0;
     text-align: justify;
 }
+.post-text a{
+    color: var(--second-color);
+    cursor: pointer;
+}
 .img-code{
     max-width: 575px;
     height: auto;
@@ -424,9 +438,11 @@ p span{
     font-size: 14px;
     line-height: 1.5rem;
 }
-.latihan span{
-    color: var(--second-color);
-    margin-right: 5px;
+.tutorial{
+    display: flex;
+}
+.tutorial img{
+    max-width: 425px;
 }
 /*Share*/
 .share{

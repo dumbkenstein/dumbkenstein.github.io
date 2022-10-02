@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Febriyan Naufal Ahza">
     <link rel="icon" href="/img/icon.svg" type="image/x-icon">
-    <title>Naufal Personal Blog</title>
+    <title>Personal Blog</title>
     <!-- Link To CSS -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- Box Icons-->
@@ -20,7 +22,7 @@
         <div class="nav container">
             <div class="banner">
                 <!-- Logo -->
-                <span href="/index.html" class="banner-home">naufal@ahza</span>
+                <span><a href="/index.html" class="banner-home">naufal@ahza</a></span>
                 <span class="banner-dir">$ cat post.txt</span>
                 <span class="banner-cursor"></span>
             </div>
@@ -45,7 +47,7 @@
                 <!--Back To Home-->
                 <a href="/index.html" class="back-home">Back To Home</a>
                 <!--Title-->
-                <h1 class="header-title">Cara Instalasi Bahasa R di Ubuntu dan Windows</h1>
+                <h1 class="header-title">Cara Instalasi Bahasa R di Ubuntu dan Windows 11</h1>
                 <!--Post Date-->
                 <p class="date"><i class='bx bx-calendar'></i>28 September 2022</p>
                 <!--Post Image-->
@@ -62,8 +64,34 @@
                     R menyediakan berbagai teknik statistika (permodelan linier dan nonlinier, uji statistik klasik, analisis deret waktu, klasifikasi, klasterisasi, dan sebagainya) serta grafik.  
                     Kekuatan besar dari R yang lain adalah fasilitas grafiknya, yang menghasilkan grafik dengan kualitas publikasi yang dapat memuat simbol matematika. 
                     Bahasa R kini menjadi standar de facto di antara statistikawan untuk pengembangan perangkat lunak statistika, serta digunakan secara luas untuk pengembangan perangkat lunak statistika dan analisis data.
-                    <br>Di bawah ini adalah tahapan instalasinya.</p>
-                <h2 class="sub-heading">Cara Instalasi Bahasa R di Ubuntu</h2>
+                    <br>Di bawah ini adalah tahapan instalasinya.
+                </p>
+                <div class="windows">
+                    <h2 class="sub-heading"><span>+></span> Cara Instalasi Bahasa R di Windows 11</h2>
+                    <!--Langkah 1-->
+                    <p class="post-text"><b>Langkah 1 : </b>Jalankan file installer R for Windows terlebih dahulu. Jika belum punya, kaamu bisa mengunduh di <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">sini</a>.</p>
+                    <img class="windows" src="/img/post-1/r-file.png" alt="">
+                    <!--Langkah 2-->
+                    <p class="post-text"><b>Langkah 2 : </b>Ikuti tahapan setup instalasi sebagai berikut.</p>
+                    <img class="windows" src="/img/post-1/setup-language.png" alt="">
+                    <p class="img-desc">Pilih bahasa sesuai yang kamu inginkan.</p>
+                    <img class="windows" src="/img/post-1/destination-location.png" alt="">
+                    <p class="img-desc">Kamu bisa lanjut dengan klik next saja.</p>
+                    <img class="windows" src="/img/post-1/finish.png" alt="">
+                    <!--Langkah 3-->
+                    <p class="post-text"><b>Langkah 3 : </b>Setelah selesai menjalankan file installer R, buatlah path agar program R bisa dijalankan.</p>
+                    <img class="windows" src="/img/post-1/system.png" alt="">
+                    <p class="img-desc">Buka Settings > System > About > Lalu klik "Advanced System Settings".</p>
+                    <img class="windows" src="/img/post-1/system-properties.png" alt="">
+                    <p class="img-desc">Klik Environment Variable.</p>
+                    <img class="windows" src="/img/post-1/system-variable.png" alt="">
+                    <p class="img-desc">Pilih System Variables > Path > Lalu Edit...</p>
+                    <img class="windows" src="/img/post-1/r-path.png" alt="">
+                    <p class="img-desc">Tambahkan path folder bin R sesuai dengan destinasi yang tadi.</p>
+                    <p class="post-text">Begitulah tahapan dalam menginstal R dan setting path-nya pada Windows.</p>
+                </div>
+                
+                <h2 class="sub-heading"><span>+></span> Instalasi Bahasa R di Ubuntu</h2>
                 <!--Langkah 1-->
                 <p  class="post-text"><b>Langkah 1 : </b>Pertama, kamu harus melakukan update terhadap package list menggunakan command berikut:</p>
                 <pre><span>$</span>sudo apt update && sudo apt upgrade</pre>
