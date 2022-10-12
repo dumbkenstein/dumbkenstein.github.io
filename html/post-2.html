@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Febriyan Naufal Ahza">
+    <link rel="icon" href="/img/icon.svg" type="image/x-icon">
+    <title>Personal Blog</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- JQuery Link-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav-bar -->
+        <div class="nav container">
+            <div class="banner">
+                <!-- Logo -->
+                <span><a href="/index.html" class="banner-home">naufal@ahza</a></span>
+                <span class="banner-dir">$ cat post.txt</span>
+                <span class="banner-cursor"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <!-- Article -->
+                    <li><a href="#post">Article</a></li>
+                    <!-- Daily -->
+                    <li><a href="#">Daily</a></li>
+                    <!-- About Me -->
+                    <li><a href="#">About Me</a></li>
+                </ul>
+            </div>   
+            <div class="toggle-button"><i class="fa-solid fa-bars"></i></div>       
+        </div>
+    </header>
+    
+    <!-- Post Content -->
+    <section class="post-content">
+        <div class="content-box">
+            <div class="header-content post-container">
+                <!--Back To Home-->
+                <a href="/index.html" class="back-home">Back To Home</a>
+                <!--Title-->
+                <h1 class="header-title">Tugas 2 Fungsi Dasar Statistik</h1>
+                <!--Post Date-->
+                <p class="date"><i class='bx bx-calendar'></i>12 Oktober 2022</p>
+                <!--Post Image-->
+                <img src="/img/post-1.jpg" alt="" class="header-img">
+            </div>
+            <div class="identitas">
+                <p>Nama : Febriyan Naufal Ahza</p>
+                <p>NIM : 202151191</p>
+                <p>Kelas : E</p>
+            </div>
+            <div class="post-paragraph">
+
+                <div class="latihan">
+                    <!--Latihan 1-->
+                    <h2 class="sub-heading">Soal Latihan</h2>
+                    <p class="post-text"><span>1)</span>Menampilkan nilai 1, 2, 3, 4, 5 diulang sebanyak 5 kali.</p>
+                    <img src="/img/post-2/soal1.png" alt="" class="img-code">
+                    <p class="post-text">Dari hasil gambar di atas dapat diketahui bahwa fungsi <em>rep</em> berfungsi untuk melakukan repeat. Kemudian arti dari (1:5, each=5) adalah 1:5 itu adalah angka yang ingin di ulang, <em>each</em> itu adalah berapa banyaknya angka tersebut akan di ulang.</p>
+                    
+                    <p class="post-text"><span>2)</span>Bukti frekuensi harapan muncul angka genap Tos Dadu berulang sebanyak 30 Kali</p>
+                    <img src="/img/post-2/soal2.png" alt="" class="img-code">
+                    <p class="post-text">Dari gambar di atas dapat diketahui bahwa <pre><span>></span>sample (1:6, 30, replace=T)</pre></p>
+                    <p class="post-text">memiliki arti 1:6 itu adalah jumlah banyaknya sisi dadu, kemudian 30 itu menunjukkan banyaknya perulangan, dan replace=T berarti mengaktifkan method <em>replace</em>.</p>
+
+                    <p class="post-text"><span>3)</span>Menampilkan nama Muhammad dan Faisal</p>
+                    <img src="/img/post-2/soal3.png" alt="" class="img-code">
+                    <p class="post-text">Untuk menampilkan nama Muhammad dan Faisal dapat dipanggil dengan perintah:<pre><span>></span>vec_char[index]<br><span>></span>vec_char[c(index1, index2)] #jika lebih dari satu</pre></p>
+
+                    <p class="post-text"><span>4)</span>Menampilkan vector number 4,00</p>
+                    <img src="/img/post-2/soal4.png" alt="" class="img-code">
+                    <p class="post-text">Dari gambar diatas untuk menampilkan vector number 4,00 dapat dilakukan dengan perintah:<pre><span>></span>format(vec_number[index],nsmall=2)</pre></p>
+                    <p class="post-text">parameter <em>nsmall</em> memformat akurasi 2 desimal di belakang char pada index.</p>
+                </div>
+            </div>
+                <!-- Share -->
+            <div class="share post-container">
+                <span class="share-title">Share this article</span>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <!-- Footer -->
+        <div class="footer-content">
+            <p>&#169; Febriyan Naufal Ahza All Right Reserved</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Link To JS -->
+    <script defer src="/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/6e5c8a1e9b.js" crossorigin="anonymous"></script>
+</body>
+</html>
